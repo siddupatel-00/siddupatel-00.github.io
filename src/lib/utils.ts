@@ -1,14 +1,10 @@
-import { COMPONENTS, SITE_INFO, USER } from "@/data"
+import { SITE_INFO, USER } from "@/data"
 import { clsx, type ClassValue } from "clsx"
-import { Metadata } from "next"
+import type { Metadata } from "next"
 import { twMerge } from "tailwind-merge"
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
-}
-
-export const generateOgImageUrl = (title: string, description: string) => {
-  return `/og?title=${encodeURI(title)}&description=${encodeURI(description)}`
 }
 
 export const slugify = (text: string) => {
@@ -16,9 +12,9 @@ export const slugify = (text: string) => {
     .toString()
     .toLowerCase()
     .trim()
-    .replace(/\s+/g, "-") // Replace spaces with -
-    .replace(/[^\w-]+/g, "") // Remove all non-word chars
-    .replace(/--+/g, "-") // Replace multiple - with single -
+    .replace(/\s+/g, "-")
+    .replace(/[^\w-]+/g, "")
+    .replace(/--+/g, "-")
 }
 
 export const formatMonthYear = (date: string | Date) => {
@@ -26,19 +22,6 @@ export const formatMonthYear = (date: string | Date) => {
     month: "short",
     year: "numeric",
   }).format(new Date(date))
-}
-
-export const generateMetaDataForOg = (componentName: string): Metadata => {
-  const component = COMPONENTS.find((c) => c.name === componentName)
-  const ogImageUrl = generateOgImageUrl(
-    component?.title || SITE_INFO.siteName,
-    component?.description || SITE_INFO.description
-  )
-  return generateMetaData(
-    component?.title || SITE_INFO.siteName,
-    component?.description || SITE_INFO.description,
-    ogImageUrl || SITE_INFO.ogImage
-  )
 }
 
 export const generateMetaData = (

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { CopyCode } from "../code/copy"
+import { CopyCode } from "@/components/ui/copy"
 import { TextRoll } from "./text-roll"
 
 export function NPXHolder() {

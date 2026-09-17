@@ -1,4 +1,4 @@
-import { COMPONENTS, SITE_INFO } from "@/data"
+import { SITE_INFO } from "@/data"
 import { PROJECTS } from "@/data/projects"
 import type { MetadataRoute } from "next"
 
@@ -14,22 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     },
-    {
-      url: `${BASE_URL}/components`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
   ]
-
-  const componentRoutes: MetadataRoute.Sitemap = COMPONENTS.map(
-    (component) => ({
-      url: `${BASE_URL}/components/${component.name}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    })
-  )
 
   const projectRoutes: MetadataRoute.Sitemap = PROJECTS.map((project) => ({
     url: `${BASE_URL}${project.href}`,
@@ -38,5 +23,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...routes, ...componentRoutes, ...projectRoutes]
+  return [...routes, ...projectRoutes]
 }

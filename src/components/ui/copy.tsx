@@ -2,7 +2,6 @@
 
 import { copyToClipboard } from "@/lib/copy"
 import { cn } from "@/lib/utils"
-
 import { Check, Copy } from "lucide-react"
 import React, { useState } from "react"
 
