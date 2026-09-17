@@ -7,7 +7,6 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "../ui/button"
 import { ContainerWrapper } from "./container"
-import MobileNavbar from "./mobile-nav"
 import { ThemeSwitcher } from "./theme-switcher"
 
 export function SiteHeader() {
@@ -67,11 +66,9 @@ export function SiteHeader() {
               <ThemeSwitcher />
             </ul>
           </div>
-          <div className="relative flex h-full items-center gap-x-3 sm:hidden">
-            <MobileNavbar activeUrl={activeUrl} />
-          </div>
 
-          <div className="sm:hidden">
+          {/* Mobile Header */}
+          <div className="flex h-full w-full items-center justify-between sm:hidden">
             <Link
               href="/"
               onClick={(e) => {
@@ -85,9 +82,6 @@ export function SiteHeader() {
                 {USER.name}
               </span>
             </Link>
-          </div>
-
-          <div className="sm:hidden">
             <ThemeSwitcher />
           </div>
         </nav>
