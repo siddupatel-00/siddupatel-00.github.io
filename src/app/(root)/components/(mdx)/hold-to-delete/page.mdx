@@ -1,0 +1,20 @@
+import { getComponentTitle, metadataMap } from "@/lib/og"
+
+export const metadata = {
+  title: getComponentTitle("hold-to-delete"),
+  ...metadataMap["hold-to-delete"],
+}
+
+import { getFileContent } from "@/lib/file"
+import Demo from "./demo"
+
+<CustomPreviewWithCode
+  component={<Demo />}
+  filePath="src/core/hold-to-delete/index.tsx"
+/>
+
+<Separator />
+
+# Installation
+
+<CommandWrapper componentName={"hold-to-delete"} />
