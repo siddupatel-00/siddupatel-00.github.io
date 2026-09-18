@@ -16,7 +16,7 @@ export function HeaderTitle({ title, className }: HeaderTitleProps) {
       )}
     >
       <h2
-        className="text-primary/90 p-2 text-xl font-bold md:text-2xl scroll-mt-16"
+        className="text-primary/90 p-2 text-xl font-bold tracking-tight md:text-2xl scroll-mt-16"
         id={id}
       >
         {title}

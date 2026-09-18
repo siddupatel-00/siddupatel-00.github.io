@@ -5,6 +5,7 @@ import { ProfileHeader } from "@/components/profile/profile-header"
 import { Projects } from "@/components/profile/projects"
 import { Separator } from "@/components/profile/separator"
 import { TechStack } from "@/components/profile/tech-stack"
+import { GitHubContributions } from "@/components/profile/github-contributions"
 import { ContainerWrapper } from "@/components/site/container"
 import { AnimatingScrollBars } from "@/components/site/scroll-bars"
 import { BLOGS, EXPERIENCE, PROJECTS } from "@/data"
@@ -34,6 +35,9 @@ const Page = () => {
 
       <Separator />
       <TechStack />
+
+      <Separator />
+      <GitHubContributions />
 
       {BLOGS.length > 0 && (
         <>

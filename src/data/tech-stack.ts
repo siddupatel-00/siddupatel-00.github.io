@@ -8,32 +8,24 @@ export type TechStack = {
 }
 
 export const TECH_STACK: TechStack[] = [
-  // Languages & Core
-  { key: "python", title: "Python", category: "Languages" },
-  { key: "html", title: "HTML5", category: "Languages" },
-  { key: "css", title: "CSS3", category: "Languages" },
+  // Languages & Frameworks
+  { key: "python", title: "Python" },
+  { key: "nextjs2", title: "Next.js", theme: true },
+  { key: "react", title: "React" },
+  { key: "typescript", title: "TypeScript" },
+  { key: "tailwindcss", title: "Tailwind CSS" },
+  { key: "nodejs", title: "Node.js" },
 
-  // AI & Developer Tools
-  { key: "antigravity", title: "Antigravity", ext: "png", category: "AI & Tools" },
-  { key: "claude", title: "Claude", category: "AI & Tools" },
-  { key: "codex", title: "Codex", category: "AI & Tools" },
-  { key: "manus", title: "Manus", theme: true, category: "AI & Tools" },
-  { key: "opencode", title: "OpenCode", theme: true, category: "AI & Tools" },
-  { key: "cursor", title: "Cursor", theme: true, category: "AI & Tools" },
-  { key: "gemini", title: "Gemini", category: "AI & Tools" },
-  { key: "vscode", title: "VS Code", category: "AI & Tools" },
-
-  // Databases & Cloud
-  { key: "sqlite", title: "SQLite", category: "Databases & Cloud" },
-  { key: "neon", title: "Neon Postgres", category: "Databases & Cloud" },
-  { key: "turso", title: "Turso (libSQL)", category: "Databases & Cloud" },
-  { key: "firebase", title: "Firebase", category: "Databases & Cloud" },
+  // Databases & Backend
+  { key: "sqlite", title: "SQLite" },
+  { key: "neon", title: "Neon Postgres" },
+  { key: "turso", title: "Turso (libSQL)" },
+  { key: "firebase", title: "Firebase" },
 
   // Platforms & Deployment
-  { key: "git", title: "Git & GitHub", category: "Platforms" },
-  { key: "vercel", title: "Vercel", category: "Platforms" },
-  { key: "render", title: "Render", category: "Platforms" },
-  { key: "bravo", title: "Brevo (Mails)", category: "Platforms" },
+  { key: "git", title: "Git & GitHub" },
+  { key: "vercel", title: "Vercel" },
+  { key: "render", title: "Render" },
 ]
 
 

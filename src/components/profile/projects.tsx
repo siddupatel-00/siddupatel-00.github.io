@@ -10,6 +10,7 @@ import type { Project } from "@/data/projects"
 import { PROJECTS } from "@/data/projects"
 import { cn } from "@/lib/utils"
 
+import { motion } from "motion/react"
 import { ArrowRight, ChevronDown, GithubIcon, LinkIcon } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -57,12 +58,18 @@ export function Projects() {
 
 export function SingleProject({ project }: { project: Project }) {
   return (
-    <div className="relative z-10 p-3">
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-30px" }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      className="relative z-10 p-3"
+    >
       {/* Link */}
       <div className="group flex w-full cursor-pointer flex-col gap-2">
         <Link
           href={project.href}
-          className="border-border rounded-[10px] border p-[4px]"
+          className="border-border group-hover:border-primary/40 rounded-[10px] border p-[4px] transition-all duration-300 group-hover:shadow-xs"
         >
           <div
             className={cn(
@@ -106,16 +113,34 @@ export function SingleProject({ project }: { project: Project }) {
         <div className="flex flex-col gap-1 px-2">
           <Link href={project.href}>
             <div className="flex items-center justify-between">
-              <h3 className="text-primary/95 mb-1 text-sm leading-snug font-medium text-balance sm:text-base">
+              <h3 className="text-primary/95 mb-0.5 text-sm leading-snug font-medium text-balance sm:text-base">
                 {project.title}
               </h3>
             </div>
-            <CardDescription className="text-muted-foreground min-h-[40px] text-sm">
+            <CardDescription className="text-muted-foreground min-h-[38px] text-xs sm:text-sm leading-snug">
               {project.description}
             </CardDescription>
           </Link>
 
-          <div className="flex items-center justify-between gap-1 py-1 select-none">
+          {project.skills && project.skills.length > 0 && (
+            <div className="flex flex-wrap gap-1.5 pt-1">
+              {project.skills.slice(0, 3).map((skill) => (
+                <span
+                  key={skill}
+                  className="bg-muted/80 text-muted-foreground/90 text-[11px] font-medium px-2 py-0.5 rounded-md border border-border/60"
+                >
+                  {skill}
+                </span>
+              ))}
+              {project.skills.length > 3 && (
+                <span className="text-muted-foreground/60 text-[11px] font-medium px-1 py-0.5">
+                  +{project.skills.length - 3}
+                </span>
+              )}
+            </div>
+          )}
+
+          <div className="flex items-center justify-between gap-1 pt-1.5 select-none">
             <div className="flex gap-x-2">
               {project.liveLink && (
                 <Tooltip>
@@ -160,6 +185,6 @@ export function SingleProject({ project }: { project: Project }) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }

@@ -1,25 +1,24 @@
 import { USER } from "./user"
 
 export const SITE_INFO = {
-  siteName: "Siddartha Surishetti | Fullstack Vibecoder",
+  siteName: "Siddartha Surishetti | AI Product Builder",
   url: "https://siddupatel-00.github.io",
   name: "Siddartha Surishetti",
   description:
-    "Portfolio of Siddartha Surishetti (Siddu) — Fullstack Vibecoder building clean, neat, end-to-end websites with modern web technologies and AI.",
+    "Portfolio of Siddartha Surishetti (Siddu) — AI Product Builder shipping clean, neat, end-to-end web products with modern web technologies and AI.",
   ogImage: "/assets/siddu-preview-card.png",
   keywords: [
     "Siddartha Surishetti",
     "Siddu",
-    "Fullstack Vibecoder",
+    "AI Product Builder",
     "Python",
-    "React",
+    "Web Development",
     "Next.js",
     "Tailwind CSS",
     "AI",
     "Portfolio",
     "DSAMRR",
     "CallVerse",
-    "WebRTC",
   ],
   authors: [
     {
@@ -31,8 +30,8 @@ export const SITE_INFO = {
 
 export const TEXT_TO_ANIMATE = [
   "Building clean, neat, end-to-end websites",
-  "Fullstack Vibecoder",
-  "Shipping websites with AI",
+  "AI Product Builder",
+  "Shipping products with AI",
   "100+ DSA in Python",
 ]
 

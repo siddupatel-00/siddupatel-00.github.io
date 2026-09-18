@@ -42,13 +42,13 @@ export function ProfileHeader() {
             </svg>
           </div>
           <h2 className="text-muted-foreground text-center text-sm sm:text-left md:text-base flex flex-col sm:flex-row items-center sm:items-center gap-0.5 sm:gap-1.5 min-h-[44px] sm:min-h-0">
-            <span className="shrink-0 font-medium">Fullstack Vibecoder</span>
+            <span className="shrink-0 font-medium">AI Product Builder</span>
             <span className="hidden sm:inline">|</span>
             <div className="h-6 flex items-center justify-center sm:justify-start overflow-hidden">
               <WordLoop
                 texts={[
                   "Building clean, neat, end-to-end websites",
-                  "Shipping websites with AI",
+                  "Shipping products with AI",
                   "100+ DSA in Python",
                 ]}
                 transition={{

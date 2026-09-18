@@ -88,7 +88,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} w-full antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} font-sans w-full antialiased`}
       >
         <PageViewAnalytics />
         <TooltipProvider>

@@ -143,10 +143,10 @@ const ProjectPage = async ({
         </p>
         <div className="space-y-2">
           {project.descriptionList.length > 0 && (
-            <ul className="flex list-disc flex-col gap-1.5 pl-5">
+            <ul className="flex list-disc flex-col gap-1 pl-5">
               {project.descriptionList.map((item, index) => (
-                <li key={index} className="text-muted-foreground">
-                  <p className="text-primary text-sm">{item}</p>
+                <li key={index} className="text-muted-foreground leading-snug">
+                  <span className="text-primary text-sm leading-snug">{item}</span>
                 </li>
               ))}
             </ul>
