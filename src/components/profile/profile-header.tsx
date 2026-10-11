@@ -1,5 +1,6 @@
 import { USER } from "@/data"
 import { cn } from "@/lib/utils"
+import { FileText } from "lucide-react"
 import Image from "next/image"
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip"
 import { WordLoop } from "./word-loop"
@@ -63,7 +64,7 @@ export function ProfileHeader() {
             </div>
           </h2>
         </div>
-        <div className="mx-2 my-2 flex flex-col items-center sm:items-end sm:justify-end">
+        <div className="mx-2 my-2 flex flex-col items-center gap-2 sm:items-end sm:justify-end">
           {/* Social icons */}
           <div className="border-edge group relative grid w-full max-w-[260px] cursor-pointer grid-cols-3 rounded-sm sm:w-auto sm:gap-x-6 sm:py-1">
             {USER.socials.map((item) => {
@@ -98,6 +99,15 @@ export function ProfileHeader() {
               )
             })}
           </div>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-edge bg-muted/50 hover:bg-muted text-primary/90 hover:text-primary flex items-center gap-1.5 rounded-sm border px-3 py-1 text-xs font-medium transition-colors"
+          >
+            <FileText className="size-3.5" />
+            <span>View Resume</span>
+          </a>
         </div>
       </div>
     </div>
