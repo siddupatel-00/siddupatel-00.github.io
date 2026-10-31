@@ -13,7 +13,6 @@ export const SITE_INFO = {
     "AI Product Builder",
     "Python",
     "Web Development",
-    "Next.js",
     "Tailwind CSS",
     "AI",
     "Portfolio",

@@ -10,11 +10,7 @@ export type TechStack = {
 export const TECH_STACK: TechStack[] = [
   // Languages & Frameworks
   { key: "python", title: "Python" },
-  { key: "nextjs2", title: "Next.js", theme: true },
-  { key: "react", title: "React" },
-  { key: "typescript", title: "TypeScript" },
   { key: "tailwindcss", title: "Tailwind CSS" },
-  { key: "nodejs", title: "Node.js" },
 
   // Databases & Backend
   { key: "sqlite", title: "SQLite" },

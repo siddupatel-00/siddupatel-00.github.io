@@ -21,8 +21,6 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/siddupatel-00/dsamrr",
     liveLink: "https://dsamrr.vercel.app",
     skills: [
-      "Next.js",
-      "TypeScript",
       "Turso",
       "Drizzle ORM",
       "Tailwind CSS",
@@ -47,9 +45,7 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/siddupatel-00/domainyour.link",
     liveLink: "https://domainyourlink.vercel.app",
     skills: [
-      "Next.js",
       "Turso",
-      "TypeScript",
       "Drizzle ORM",
       "Tailwind CSS",
     ],
@@ -72,10 +68,8 @@ export const PROJECTS: Project[] = [
     liveLink: "https://connectfamily.vercel.app",
     skills: [
       "WebRTC",
-      "React",
       "Firebase",
       "Socket.IO",
-      "Node.js",
       "Capacitor",
       "Zustand",
       "Tailwind CSS",
@@ -122,10 +116,8 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/siddupatel-00/SIH-HACKATHON",
     liveLink: "https://aurafitai.vercel.app",
     skills: [
-      "React",
       "Groq AI",
       "Recharts",
-      "TypeScript",
       "Web Audio API",
       "Tailwind CSS",
     ],
@@ -148,10 +140,8 @@ export const PROJECTS: Project[] = [
     githubLink: "",
     liveLink: "https://play.modiqo.ai/siddu-launch/community-launch-scout@1.0.0",
     skills: [
-      "TypeScript",
       "Reddit API",
       "GitHub API",
-      "Node.js",
       "REST APIs",
     ],
     descriptionList: [
