@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Resume | Siddartha Surishetti",
-  description: "Resume of Siddartha Surishetti",
+  title: "Resume | Chiru Chiru",
+  description: "Resume of Chiru Chiru",
 }
 
 export default function ResumePage() {

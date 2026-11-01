@@ -1,15 +1,14 @@
 import { USER } from "./user"
 
 export const SITE_INFO = {
-  siteName: "Siddartha Surishetti | AI Product Builder",
+  siteName: "Chiru Chiru | AI Product Builder",
   url: "https://siddupatel-00.github.io",
-  name: "Siddartha Surishetti",
+  name: "Chiru Chiru",
   description:
-    "Portfolio of Siddartha Surishetti (Siddu) — AI Product Builder shipping clean, neat, end-to-end web products with modern web technologies and AI.",
+    "Portfolio of Chiru Chiru — AI Product Builder shipping clean, neat, end-to-end web products with modern web technologies and AI.",
   ogImage: "/assets/siddu-preview-card.png",
   keywords: [
-    "Siddartha Surishetti",
-    "Siddu",
+    "Chiru Chiru",
     "AI Product Builder",
     "Python",
     "Web Development",

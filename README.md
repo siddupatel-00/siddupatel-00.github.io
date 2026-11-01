@@ -1,6 +1,6 @@
-# Siddartha Surishetti — Portfolio
+# Chiru Chiru — Portfolio
 
-Portfolio website of Siddartha Surishetti (Siddu) — AI Product Builder building clean, neat, end-to-end web products with modern web technologies and AI.
+Portfolio website of Chiru Chiru — AI Product Builder building clean, neat, end-to-end web products with modern web technologies and AI.
 
 🔗 **Live Site**: [https://siddupatel-00.github.io](https://siddupatel-00.github.io)
 

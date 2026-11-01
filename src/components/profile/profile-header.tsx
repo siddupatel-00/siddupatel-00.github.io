@@ -1,7 +1,6 @@
 import { USER } from "@/data"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
-import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip"
 import { WordLoop } from "./word-loop"
 
 export function ProfileHeader() {
@@ -14,8 +13,8 @@ export function ProfileHeader() {
           "[background-image:radial-gradient(var(--edge)_1.5px,transparent_0)] [background-size:10px_10px] bg-repeat-round"
         )}
       />
-      <div className="z-40 mt-10 grid w-full grid-cols-1 gap-y-4 px-4 sm:grid-cols-3">
-        <div className="col-span-2 space-y-1">
+      <div className="z-40 mt-10 w-full px-4">
+        <div className="space-y-1">
           <div className="relative flex w-full justify-center sm:justify-start">
             <Image
               src={USER.avatar}
@@ -63,44 +62,7 @@ export function ProfileHeader() {
             </div>
           </h2>
         </div>
-        <div className="mx-2 my-2 flex flex-col items-center sm:items-end sm:justify-end">
-          {/* Social icons */}
-          <div className="border-edge group relative grid w-full max-w-[260px] cursor-pointer grid-cols-3 rounded-sm sm:w-auto sm:gap-x-6 sm:py-1">
-            {USER.socials.map((item) => {
-              const isMail = item.href.startsWith("mailto:")
-              return (
-                <Tooltip key={item.name}>
-                  <TooltipTrigger asChild>
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      target={isMail ? undefined : "_blank"}
-                      rel={isMail ? undefined : "noopener noreferrer"}
-                      className="border-edge flex h-full items-center justify-center overflow-hidden border-dashed p-1.5 [&:not(:first-child)]:border-l-[1px]"
-                    >
-                      <Image
-                        src={item.icon}
-                        alt={item.name}
-                        width={48}
-                        height={48}
-                        fetchPriority="high"
-                        className="size-7 rounded-sm"
-                      />
-                    </a>
-                  </TooltipTrigger>
-                  <TooltipContent
-                    className="bg-secondary"
-                    arrowClassName="bg-secondary fill-secondary"
-                  >
-                    <p className="text-foreground text-sm">{item.name}</p>
-                  </TooltipContent>
-                </Tooltip>
-              )
-            })}
-          </div>
-        </div>
       </div>
     </div>
   )
 }
-

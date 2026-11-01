@@ -1,10 +1,10 @@
 export const USER = {
-  name: "SIDDARTHA SURISHETTI",
+  name: "CHIRU CHIRU",
   email: "siddusurishetti@gmail.com",
   avatar: "/assets/pfp-muhehe.jpeg",
-  firstName: "Siddartha",
-  lastName: "Surishetti",
-  fullName: "Siddartha Surishetti",
+  firstName: "Chiru",
+  lastName: "Chiru",
+  fullName: "Chiru Chiru",
   username: "siddupatel-00",
   gender: "Male",
   socials: [
