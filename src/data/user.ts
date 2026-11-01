@@ -1,7 +1,7 @@
 export const USER = {
   name: "SIDDARTHA SURISHETTI",
   email: "siddusurishetti@gmail.com",
-  avatar: "/assets/avatar-v2.png",
+  avatar: "/assets/pfp-muhehe.jpeg",
   firstName: "Siddartha",
   lastName: "Surishetti",
   fullName: "Siddartha Surishetti",
