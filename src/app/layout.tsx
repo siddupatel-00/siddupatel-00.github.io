@@ -87,6 +87,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        <script
+          defer
+          src="https://muhehefast.vercel.app/t.js?site=s_7a53e875e06c2aa2043c5dea"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans w-full antialiased`}
       >
